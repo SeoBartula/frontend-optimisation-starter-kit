@@ -41,6 +41,19 @@
         font-display: swap;
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
+    /* TEST IMG */
+      .bgcbwimage {
+        position: absolute;
+        top:0;
+        left:0;
+        z-index:-1;
+        overflow: hidden;
+    }
+      .bgcbwimage img {
+        width:100%;
+        height:100%;
+      }
+
     </style>
 
 
@@ -203,7 +216,8 @@
 
     <header
       class="l-home-banner"
-      style="background-image: url('/assets/images/homework/banner.png')">
+      style="background-image: url('assets/images/homework/banner-min.png')">
+      <div class="bgcbwimage"><img src="assets/images/homework/banner.jpg" alt=""></div>
       <div class="layout">
         <div class="home-banner__content text">
           <h1 class="headline-1">Seamless<br> payment option</h1>
